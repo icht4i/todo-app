@@ -1,7 +1,6 @@
 import './App.css';
 import 'antd/dist/antd.min.css';
 import {Col, Row} from 'antd';
-
 import Profile from './components/profile';
 import Content from './components/content';
 import Sidebar from './components/sidebar';
