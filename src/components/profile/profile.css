@@ -1,0 +1,24 @@
+.profile{
+    height: 100vh;
+    position: relative;
+}
+.color-wrapper{
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    gap: 26px;
+}
+.color-box{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.color-pink{
+    background:#EDA7C8;
+}
+.color-blue{
+    background:#A7BBED;
+}
+.color-black{
+    background:#666666;
+}

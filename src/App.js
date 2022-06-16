@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.min.css';
+import {Col, Row} from 'antd';
+
+import Profile from './components/profile';
+import Content from './components/content';
+import Sidebar from './components/sidebar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Row>
+            <Col offset={2} span={4}>
+                <Profile/>
+            </Col>
+
+            <Col span={10}>
+                <Content/>
+            </Col>
+
+            <Col span={6}>
+                <Sidebar/>
+            </Col>
+        </Row>
+    );
 }
 
 export default App;
