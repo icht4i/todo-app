@@ -5,12 +5,20 @@ import {Col, Row} from 'antd';
 import Profile from './components/profile';
 import Content from './components/content';
 import Sidebar from './components/sidebar';
+import { useEffect, useState } from 'react';
 
 function App() {
+    const [color, setColor] = useState('');
+
+    useEffect(() => {
+        document.body.style.background = color;
+    }, [color]);
+    
+
     return (
         <Row>
             <Col offset={2} span={4}>
-                <Profile/>
+                <Profile color={color} setColor={(c) => setColor(c)} />
             </Col>
 
             <Col span={10}>

@@ -1,24 +1,38 @@
-.profile{
+.profile {
     height: 100vh;
-    position: relative;
 }
-.color-wrapper{
+
+.color-wrapper {
     position: absolute;
     bottom: 100px;
     display: flex;
     gap: 26px;
+    mix-blend-mode: unset;
 }
-.color-box{
+
+.color-box {
     border-radius: 50%;
     width: 35px;
     height: 35px;
+    mix-blend-mode: unset;
 }
-.color-pink{
-    background:#EDA7C8;
+
+.color-box:before {
+    content: '';
+    border-radius: 50%;
 }
-.color-blue{
-    background:#A7BBED;
+
+.color-pink {
+    background: #EDA7C8;
+    mix-blend-mode: unset;
 }
-.color-black{
-    background:#666666;
+
+.color-blue {
+    background: #A7BBED;
+    mix-blend-mode: unset;
+}
+
+.color-black {
+    background: #666666;
+    mix-blend-mode: unset;
 }
